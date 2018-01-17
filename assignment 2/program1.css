@@ -1,0 +1,199 @@
+/* account: zweng1
+    file: program1.css*/
+  
+body{
+    background-color: #FFCC00;
+    color:#000000;
+    font-family: "Georgia", Garamond,serif;
+        
+    
+}
+
+.body1{
+    background-color: #FFFFFF;
+    color:#000000;
+    font-family: "Georgia", Garamond,serif;
+}
+    
+
+.head1{
+    color:#A4A400;
+    background:#F0F0F0;
+    font-size: 24pt;
+    text-align: center;
+    font-family: "Century", Gothic, Futura, Verdana;
+    letter-spacing: 2px;
+}
+
+.head2{
+    color:#A4A400;
+    background:#F0F0F0;
+    font-size: 20pt;
+    text-align: center;
+    font-family: "Century", Gothic, Futura, Verdana;
+    letter-spacing: 2px;
+}
+
+.head3{
+    color:red;
+    background:#F0F0F0;
+    font-size: 20pt;
+    text-align: left;
+    text-decoration: underline;
+    text-decoration-style:dashed;
+    font-family: "Century", Gothic, Futura, Verdana;
+    letter-spacing: 2px;
+}
+
+.ul1 {
+    list-style-type: none;
+    margin: 10px;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.ul2 {
+    margin: 10px;
+    padding: 10px;
+    overflow: hidden;
+
+}
+
+.li1 {
+    float: left;
+    border-left:15px solid #FFCC00 ;
+    border-right:15px solid #003366 ;
+}
+
+.li2 {
+    font-size: 15pt;
+    font-style: italic;
+    margin-bottom: 5px;
+    font-family: "Century", Gothic, Futura, Verdana;
+}
+.li3{
+    font-size: 15pt;
+    font-style: italic;
+    margin-left: 10px;
+    margin-bottom: 7px;
+}
+.li4 {
+    font-size: 15pt;
+    margin-bottom: 5px;
+    font-family: "Century", Gothic, Futura, Verdana;
+}
+
+.li5{
+    float:left;
+    margin-left:15px;
+    margin-right:15px;
+}
+.a1 {
+    display: block;
+    padding: 8px;
+    background-color: #A4A400;  
+}
+.ol1{
+    list-style-type:upper-roman;
+     margin: 15px;
+    overflow: hidden;  
+}
+.ol2{
+    list-style-type:lower-alpha;
+     margin: 15px;
+    overflow: hidden;  
+}
+
+.next{
+    float: left;
+    margin-left: 30px;
+    display: block;
+    border:15px solid #FFCC00 ;
+}
+
+.previous{
+    float: left;
+    margin-left: 30px;
+    display: block;
+    border:15px solid #FFCC00 ;
+}
+.totop{
+    float: right;
+    margin-right: 100px;
+    display: block;
+    border:15px solid #FFCC00 ;
+}
+
+.p1{
+    font-weight: bold;
+}
+.p2{
+    font-weight: bold;
+    font-size: 16pt;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border-style: dashed;
+   
+    margin: 1em 0;
+    padding: 0;
+}
+
+
+table, th, td {
+    border: 2px solid #FFFFFF;
+    background-color: #CC9933;
+    margin-top: 20px;
+    color:#FFFFFF;
+    border-collapse: collapse;
+    padding:5px;
+    
+}
+
+
+tbody td:first-child{
+    letter-spacing: 2px;
+    font-weight: bold;
+    color:#A4A400;
+    background:#F0F0F0;
+    font-size: 24pt;
+    text-align: center
+   
+}
+
+table th {
+    
+    font-family: "Century", Gothic, Futura, Verdana;
+   background-color: #003366;
+}
+.container {
+    margin-top:20px;
+	height:270px;
+    width: 100%;
+	overflow:auto;
+	display:block;
+}
+.left{
+    float: left;
+    vertical-align:top;
+    width: 25%;
+    height:270px;
+}
+.right{
+    float: right;
+    vertical-align:top;
+    height:270px;
+    width: 75%;
+}
+
+.pic{
+	width:250px;
+	height:250px;
+}
+.pic1{
+
+	width:80%;
+	height:250px;
+}
