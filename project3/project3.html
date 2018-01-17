@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--
+    extra feature: 1. end game notification. 2. Game time. 3. Multiple Background Picture
+    4. Different puzzle size
+-->  
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+     <script type="text/javascript" src="project3.js"></script>
+ <title>Fifteen Puzzle</title>
+    
+</head>
+    
+<body>
+    <h1>Fifteen Puzzle</h1>
+    <div>
+        <div id="container">
+    
+    <div id="left">
+        <p class="text">Click below images to change background image</p>
+        <Button id="button1" onclick="changeBackground(0)"></Button>
+        <Button id="button2" onclick="changeBackground(1)"></Button><br>
+        <Button id="button3" onclick="changeBackground(2)"></Button>
+        <Button id="button4" onclick="changeBackground(3)"></Button>
+     </div>
+            
+    <div id="center">
+        <div id="game"></div>
+    </div>
+            <div id="right">
+                 <p id="time">Time:</p>
+                <p class="input">
+    <Button class="button" onclick="random()">shuffle</Button><br>
+    <input type="radio" name="level" value=16>4x4 
+    <input type="radio" name="level" value="64">8X8  <br>
+    <Button class="button" onclick="level()">Change Level</Button><br>
+       <Button class="button" onclick="gameEnd()">End Game</Button></p>
+                <p><a class="button" href="https://validator.w3.org/">HTML Validaor</a></p>
+    <p><a class="button" href="https://jigsaw.w3.org/css-validator/#validate_by_uri">CSS Validaor</a></p>
+                <p><a class="button"href="http://www.jslint.com/">JSLINT Validaor</a></p>
+            </div>
+        </div>
+</div>
+    
+>
+</body>
+    
+
+
