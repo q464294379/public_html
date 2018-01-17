@@ -1,0 +1,167 @@
+body{
+    background:url('../project1/bg.jpg');
+}
+h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 40pt;
+    font-family: fantasy;
+    text-shadow: 2px 2px #FFFFFF;
+}
+
+/*
+#right{
+    height:50%;
+    width:20%;
+    float:right;
+}
+*/
+#center{
+   
+    height:50%;
+    width:50%;
+
+    float:left;
+}
+#left1{
+    height:50%;
+    width:40%;
+    float:left;
+}
+
+#left{
+    align-content: center;
+    margin-left: 20%;
+    height:50%;
+    width:30%;
+    float:left;
+}
+
+td:nth-child(3n) {  
+   border-right: 2px solid black;
+}
+
+tr:nth-child(3n) {  
+   border-bottom: 2px solid black;
+}
+
+ table {
+     font-family: fantasy;
+        font-size: 20pt;
+        border: 2px solid #000000;
+      background:white;
+     border-collapse:collapse；
+      }
+
+td {
+    width: 48px;
+        height: 48px;
+        border: 1px solid #000000;
+        text-align: center;
+        vertical-align: middle;  
+      }
+ input {
+        color: #000000;
+        padding: 0;
+        border: 0;
+        text-align: center;
+        width: 48px;
+        height: 48px;
+        font-family: fantasy;
+        font-size: 20pt;
+        background-color: #FFFFFF;
+        outline: none;
+      }
+.text{
+    text-align: center;
+    font-size: 30pt;
+    font-family: fantasy;
+    text-shadow: 2px 2px #FFFFFF;
+    
+}
+.check1:hover {
+  background: #06D85F;
+}
+.check{
+        color: #000000;
+        padding: 0;
+        margin-top: 10px;
+        border: 2px solid black;
+        text-align: center;
+        cursor: pointer;
+        width: 100px;
+        height: 48px;
+        font-size: 24px;
+        background-color: #FFFFFF;
+        outline: none;
+        box-shadow:10px 8px 5px black;
+}
+     
+
+ .cell { border:    2px solid #000000; }
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+#start_center {
+	margin:auto;
+	width: 55%;
+	font-size:20pt;
+	float:right;
+}
+.userInputColor {
+	color:#0077be;
+	font-family:fantasy;
+}
+.button {
+    background-color: #0077be;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+	box-shadow: 10px 10px 5px #888888;
+}
+.tooltip {
+	background:white;
+	border-style:double;
+	margin-left:20px;
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 400px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+	font-size:15pt;
+	font-family:fantasy;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+#tipText {
+	margin-left:20px;
+	font-size:20pt;
+	font-family:fantasy;
+	margin-right:20px;
+}
+.h4 {
+	font-size:20pt;
+	font-family:fantasy;
+	text-shadow: 2px 2px #FFFFFF;
+	
+}
+#frontPage {
+	margin-top:10%;
+}

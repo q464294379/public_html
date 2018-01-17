@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Prasad Honrao" />
+    <meta name="description" content="JavaScript accept user input demo" />
+    <meta name="keywords" content="JavaScript, UserInput" />
+    <title>In class javascript exercise 1</title>
+    
+    
+    
+    <script type="text/javascript">
+        
+        var r = Math.floor(Math.random()*(1000-0+1)+0);
+    var out ="";
+        var i=0;
+        function displayOutput() {
+           
+            
+            var input = document.getElementById("userInput").value;
+            var check= true;
+            do{
+        
+            if (input.length === 0) {
+                alert("Please enter a valid input");
+                return;
+            }
+            else{
+                if(input>r){
+                    out=out+  input+" is too high" +"<br/>";
+                    i=0;
+                }
+                if(input<r){
+                    out= out+ input +" is too low"+ "<br/>";
+                    i=0;
+                }
+                if(input==r){
+                    out=out+input + " is correct"  +"<br/>";
+                    i= -1;
+                }
+            }
+                }while(i=0);
+             
+           document.getElementById("result").innerHTML = out +r;
+           
+        }
+        
+    </script>
+</head>
+    
+<body>
+    <h1>In class javascript exercise</h1>
+    <input type="text" id="userInput"  />
+    <input type="submit" value="Submit" onclick="displayOutput()" />
+    <p id="result"></p>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        
+    $(document).ready(function() {
+        $("#cc1").hide();
+        $("#wt1").hide();
+    $('input:radio[name=cc]').change(function() {
+        if (this.value == 'CCard') {
+            $("#cc1").show();
+            $("#wt1").hide();
+        }
+        else if (this.value == 'WTransfer') {
+            $("#cc1").show();
+            $("#wt1").show();
+        }
+    });
+});
+function isN(evt){
+    var c = (evt.which) ? evt.which : evt.keyCode
+    return !(c> 31 && (c < 48 || c > 57));
+}   
+        
+$( function() {
+    $(".informationable").click(function(){
+        var name = $(this).text();
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            alert(this.responseText);
+        }
+    };
+    xhttp.open("GET",name+".txt", true);
+    xhttp.send();
+    });
+    $( ".removable" ).draggable();
+    $( "#trashcan" ).droppable({
+      drop: function( event, i ) {
+            var check = confirm("Do you want to delete this item from the list?");
+            if(check == true){
+                $(i.draggable).remove();
+            }
+            else{
+                $(i.draggable).animate({ top: 0, left: 0 }, 'fast');
+            }
+      }
+    });
+  } );
+
+        
+</script>
+</head>
+    
+<body>
+    <form>
+        <label>payment: </label>
+    <input type="radio" name="cc" value="CCard">Credit Card 
+    <input type="radio" name="cc" value="WTransfer">Wire Transfer 
+        <button>buy!</button>
+        </form>
+    <p id="cc1">Card number <input type="number" onkeypress="return isN(event)">  Expiration<input type="number" onkeypress="return isN(event);">
+    <input type="number" onkeypress="return isN(event);"> 3-digit Security Number<input type="number" onkeypress="return isN(event);">
+    </p>
+    <p id=wt1>Transfer the amount to: reg. $957.00, to account 0009286322 </p>
+    <ul>
+    <li class="removable informationable">Cat</li>
+    <li class="removable informationable">Dog</li>
+    <li class="removable informationable">Panda</li>
+    <li class="removable informationable">Bear</li>
+</ul>
+    <div id="trashcan">
+<img src="trashcan.png" width="100px" height="100px" alt="trash" >
+</div>
+   
+
+</body>
+    
+
+
